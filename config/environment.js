@@ -13,6 +13,13 @@ module.exports = function(environment) {
       }
     },
 
+    firebase: {
+      apiKey: "AIzaSyAi9-RPEQtSZqMjTu0xNe8gttvAobQNlU8",
+      authDomain: "craigslist-clone-d0b59.firebaseapp.com",
+      databaseURL: "https://craigslist-clone-d0b59.firebaseio.com",
+      storageBucket: "craigslist-clone-d0b59.appspot.com",
+    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created

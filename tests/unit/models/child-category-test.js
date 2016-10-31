@@ -1,6 +1,6 @@
 import { moduleForModel, test } from 'ember-qunit';
 
-moduleForModel('parent-category', 'Unit | Model | parent category', {
+moduleForModel('child-category', 'Unit | Model | child category', {
   // Specify the other units that are required for this test.
   needs: []
 });

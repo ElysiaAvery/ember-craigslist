@@ -1,0 +1,8 @@
+<div class="well">
+  {{#link-to 'category' category.id}}<h2>{{category.title}}</h2>{{/link-to}}
+  <ul>
+    {{#each category.childCategories as | child-category |}}
+      {{#link-to 'child-category' child-category.id}}<li>{{child-category.title}}</li>{{/link-to}}
+    {{/each}}
+  </ul>
+</div>
