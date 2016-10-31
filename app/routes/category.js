@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  showingNewCategory: false,
   model: function(params) {
     return this.store.findRecord('category', params.category_id);
   },
@@ -13,6 +14,9 @@ export default Ember.Route.extend({
         return category.save();
       });
       this.transitionTo('index');
+    },
+    showNewCategory() {
+      this.set('showingNewCategory', true);
     }
   }
 });

@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  addNewChildCategory: false,
+  showingNewCategory: false,
     actions: {
       childCategoryFormShow() {
         this.set('addNewChildCategory', true);
@@ -12,8 +12,11 @@ export default Ember.Component.extend({
           description: this.get('description'),
           category: this.get('category')
       };
-        this.set('addNewChildCategory', false);
+        this.set('showNewCategory', false);
         this.sendAction('saveChildCategory', params);
+      },
+      showNewCategory() {
+        this.set('showingNewCategory', true);
       }
     }
 });

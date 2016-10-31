@@ -1,1 +1,5 @@
-{{model.title}}
+<h3>{{model.childCategory.title}}</h3> 
+{{#each model.childCategory.listings as | listing |}}
+  {{listing-tile listing=listing}}
+{{/each}}
+{{new-listing saveListing="saveListing" child-category=model.childCategory}}

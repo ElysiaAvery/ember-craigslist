@@ -2,5 +2,14 @@
   "categories":[{
     "title":"For Sale",
     "description":"Listings for items for sale."
-  }],
+  },{
+    "title": "Services",
+    "description": "Local Services"
+  }, {
+    "title": "Jobs",
+    "description": "Job Postings"
+  }, {
+    "title": "Housing",
+    "description": "Housing Available in your area."
+  }]
 }

@@ -1,3 +1,8 @@
   <h4>{{model.title}}</h4>
   <h5>{{model.description}}</h5>
-  {{new-child-category saveChildCategory="saveChildCategory" category=model}}
+  {{#each model.childCategories as |childCategory|}}
+    {{#each childCategory.listings as | listing |}}
+      {{listing-tile listing=listing}}
+    {{/each}}
+  {{/each}}
+  {{new-child-category saveChildCategory="saveChildCategory" showNewCategory="showNewCategory" category=model}}
