@@ -1,7 +1,7 @@
 # Craigslist-clone
+Made By: Elysia Nason
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+A website that allows users to post new listings within sub-categories that can be seen from the main categories or by navigating to sub-categories.
 
 ## Prerequisites
 
